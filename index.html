@@ -5,10 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple Website with Bootstrap</title>
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-x1pzFd5UcyS+pEz3n1zxrC+Wqb7zYhQFd9C29p+CUjAOQGZ6bsfW+KtFRQhpGWol" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
   <style>
-    /* Add your custom styles here */
+    /* Navbar */
+    .navbar {
+      background-color: #343a40;
+    }
+
+    .navbar-brand {
+      color: #fff;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff;
+    }
+
+    /* Side Menu */
+    .sidebar {
+      background-color: #f8f9fa;
+      border-right: 1px solid #dee2e6;
+    }
+
+    .sidebar-heading {
+      background-color: #e9ecef;
+      font-weight: bold;
+    }
+
+    /* Main Content */
+    .main-content {
+      padding-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -20,7 +47,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
@@ -36,26 +63,36 @@
   </nav>
 
   <!-- Side Menu -->
-  <div class="container mt-4">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-3">
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">Menu Item 1</a>
-          <a href="#" class="list-group-item list-group-item-action">Menu Item 2</a>
-          <a href="#" class="list-group-item list-group-item-action">Menu Item 3</a>
+      <nav class="col-md-3 col-lg-2 d-md-block sidebar">
+        <div class="sidebar-sticky">
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Menu</span>
+          </h6>
+          <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Menu Item 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu Item 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu Item 3</a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="col">
-        <!-- Main Content Area (waiting for API content) -->
-        <div class="container">
-          <h1>Main Content Area</h1>
-          <p>Waiting for content from API...</p>
-        </div>
-      </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 main-content">
+        <h1 class="mt-4">Main Content Area</h1>
+        <p>Waiting for content from API...</p>
+      </main>
     </div>
   </div>
 
   <!-- Bootstrap Bundle with Popper.js -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-AO3nl7IZ7+OJZLKtP1Ggi9+ueW0e0FeCwLdCfH4tMRBUeWJt8/ohV25lOZKT0w1M" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
