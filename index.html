@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Testing</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Website with Bootstrap</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-x1pzFd5UcyS+pEz3n1zxrC+Wqb7zYhQFd9C29p+CUjAOQGZ6bsfW+KtFRQhpGWol" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <style>
+    /* Add your custom styles here */
+  </style>
 </head>
 <body>
-    <h1>Testing This Azure thing</h1>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Your Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Side Menu -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-3">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">Menu Item 1</a>
+          <a href="#" class="list-group-item list-group-item-action">Menu Item 2</a>
+          <a href="#" class="list-group-item list-group-item-action">Menu Item 3</a>
+        </div>
+      </div>
+      <div class="col">
+        <!-- Main Content Area (waiting for API content) -->
+        <div class="container">
+          <h1>Main Content Area</h1>
+          <p>Waiting for content from API...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle with Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-AO3nl7IZ7+OJZLKtP1Ggi9+ueW0e0FeCwLdCfH4tMRBUeWJt8/ohV25lOZKT0w1M" crossorigin="anonymous"></script>
 </body>
 </html>
